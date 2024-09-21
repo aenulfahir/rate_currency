@@ -1,0 +1,64 @@
+.currency-table-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Atur jarak dari atas */
+  }
+  
+  .currency-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: rgb(155, 87, 87);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .currency-table th,
+  .currency-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #493636;
+  }
+  
+  .currency-table th {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .currency-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .currency-table tr:nth-child(even) {
+    background-color: #8fbfee;
+  }
+  
+  .currency-table tr:hover {
+    background-color: #101111;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Ubah ini dari min-height: 100vh */
+    font-size: 24px;
+    color: #4a90e2;
+  }
+  
+  @media (max-width: 600px) {
+    .currency-table {
+      font-size: 14px;
+    }
+  
+    .currency-table th,
+    .currency-table td {
+      padding: 8px 10px;
+    }
+  }
+  
